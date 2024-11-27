@@ -1,0 +1,217 @@
+{
+  "last_node_id": 180,
+  "last_link_id": 382,
+  "nodes": [
+    {
+      "id": 178,
+      "type": "ShowText|pysssss",
+      "pos": [
+        205.40158081054688,
+        1893.505615234375
+      ],
+      "size": [
+        525.917724609375,
+        227.97877502441406
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 381,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "非人"
+      ]
+    },
+    {
+      "id": 176,
+      "type": "PIPClass",
+      "pos": [
+        -212,
+        1893
+      ],
+      "size": [
+        304.79998779296875,
+        78
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 380,
+          "label": "image"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "分类标签",
+          "type": "STRING",
+          "links": [
+            381
+          ],
+          "slot_index": 0,
+          "label": "分类标签"
+        },
+        {
+          "name": "分类详情",
+          "type": "STRING",
+          "links": [
+            382
+          ],
+          "slot_index": 1,
+          "label": "分类详情"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PIPClass"
+      },
+      "widgets_values": [
+        "PIP_ClassV1"
+      ]
+    },
+    {
+      "id": 179,
+      "type": "ShowText|pysssss",
+      "pos": [
+        211,
+        2188
+      ],
+      "size": [
+        517.9850463867188,
+        152.32717895507812
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 382,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "动漫: 0.00 | 非人: 0.98 | 真人: 0.01"
+      ]
+    },
+    {
+      "id": 177,
+      "type": "LoadImage",
+      "pos": [
+        -618,
+        1888
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            380
+          ],
+          "label": "图像"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "label": "遮罩"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "996666.png",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      380,
+      177,
+      0,
+      176,
+      0,
+      "IMAGE"
+    ],
+    [
+      381,
+      176,
+      0,
+      178,
+      0,
+      "STRING"
+    ],
+    [
+      382,
+      176,
+      1,
+      179,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.4122927695244518,
+      "offset": [
+        779.2561696646599,
+        -1683.6662957874403
+      ]
+    },
+    "groupNodes": {}
+  },
+  "version": 0.4
+}
