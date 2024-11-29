@@ -24,7 +24,7 @@ PIP_ClassV1 模型是基于ViT-B/16预训练模型，在动漫、非人类（动
 11/29. **VIT模型加载**
 新增了对于三方图像分类模型的加载，你只需要在models下 git clone https://huggingface.co/Falconsai/nsfw_image_detection（示例，亲测有效）
 确保你的文件结构类似这样：
-Comfyui_PIP_Class/models/*:.
+- `Comfyui_PIP_Class/models/*:.
 ├─nsfw_image_detection
 │      .gitattributes
 │      config.json
@@ -40,6 +40,7 @@ Comfyui_PIP_Class/models/*:.
         model.safetensors
         preprocessor_config.json
         training_args.bin
+`
 
 
 ### 使用方法
