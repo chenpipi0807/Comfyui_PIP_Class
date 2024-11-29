@@ -12,6 +12,9 @@ PIP_ClassV1 模型是基于ViT-B/16预训练模型，在动漫、非人类（动
 1. **图像分类**：利用预训练的ViT模型，PIPClass可以准确地对输入的图像进行分类，返回最可能的类别。
 2. **自定义模型路径**：用户可以指定模型路径来加载自定义的训练模型，增加了模型的灵活性和适用范围。
 3. **图像预处理**：自动对输入的图像进行中心裁剪和调整大小，确保图像符合模型的输入要求，从而提高分类的准确性（目前尺寸为224x224）。
+
+![微信截图_20241129125450](https://github.com/user-attachments/assets/dcc69b73-49f0-41f1-9da8-4f820c8e40f7)
+
 ![微信截图_20241127163951](https://github.com/user-attachments/assets/448b6580-2ce2-406d-a9c8-4c5395e64ebf)
 ![微信截图_20241127163939](https://github.com/user-attachments/assets/fe666fa8-fa74-48d5-98fc-fb5c6dc3fbed)
 ![微信截图_20241127163900](https://github.com/user-attachments/assets/9fdc51fd-914d-4c41-a03e-801cf60daaba)
