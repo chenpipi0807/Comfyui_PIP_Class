@@ -21,6 +21,20 @@ PIP_ClassV1 模型是基于ViT-B/16预训练模型，在动漫、非人类（动
 ![微信截图_20241129111714](https://github.com/user-attachments/assets/d21e7365-bda2-42aa-8ddc-6fd9f10c8a8c)
 
 ### 重要更新
+
+11/29. **更准确的分类模型PIP_ClassV2**
+使用10000+图像微调了用于区分真实人脸/动漫人脸/其他（动物/风景/抽象元素等）
+准确率95%以上。
+
+模型地址：
+通过百度网盘分享的文件：PIP_ClassV2
+链接：https://pan.baidu.com/s/1uM-vtcNdETVckzOqDotAIQ?pwd=pip6 
+提取码：pip6 
+--来自百度网盘超级会员V5的分享
+
+使用方法：
+下载到Comfyui_PIP_Class/models路径下
+
 11/29. **VIT模型加载**
 新增了对于三方图像分类模型的加载，你只需要在models下 git clone https://huggingface.co/Falconsai/nsfw_image_detection（示例，亲测有效）
 确保你的文件结构类似这样：
