@@ -1,0 +1,15 @@
+[project]
+name = "comfyui_pip_class"
+description = "A ComfyUI custom node that provides advanced class-based operations for image processing workflows."
+version = "1.0.0"
+license = {text = "MIT"}
+dependencies = ["transformers"]
+
+[project.urls]
+Repository = "https://github.com/chenpipi0807/Comfyui_PIP_Class"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI PIP Class"
+Icon = ""
